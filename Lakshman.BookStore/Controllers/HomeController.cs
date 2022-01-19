@@ -10,9 +10,14 @@ namespace Lakshman.BookStore.Controllers
     public class HomeController: Controller
     {
         //Action method
-        public string Index()
+        public ViewResult Index()
         {
-            return "Lakshman";
+            return View();
+        }
+
+        public ViewResult AboutUs()
+        {
+            return View();
         }
     }
 }

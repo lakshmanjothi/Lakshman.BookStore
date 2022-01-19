@@ -16,9 +16,10 @@ namespace Lakshman.BookStore.Controllers
         {
             bookrepository = new BookRepository();
         }
-        public List<BookModel> GetAllBooks()
+        public ViewResult GetAllBooks()
         {
-            return bookrepository.GetAllBooks();
+            var data= bookrepository.GetAllBooks();
+            return View();
         }
 
         public BookModel GetBook(int id)
