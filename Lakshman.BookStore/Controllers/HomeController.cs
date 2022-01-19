@@ -12,10 +12,19 @@ namespace Lakshman.BookStore.Controllers
         //Action method
         public ViewResult Index()
         {
-            return View();
+            //var obj = new { Id = 1, Name = "Lakshman" };
+            //return View(obj);
+            //absolute path - return View("~/TempView/Index.cshtml");
+            //relative path
+            return View("../../TempView/Index");
         }
 
         public ViewResult AboutUs()
+        {
+            return View();
+        }
+
+        public ViewResult ContactUs()
         {
             return View();
         }

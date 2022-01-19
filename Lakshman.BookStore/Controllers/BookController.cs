@@ -22,9 +22,10 @@ namespace Lakshman.BookStore.Controllers
             return View();
         }
 
-        public BookModel GetBook(int id)
+        public ViewResult GetBook(int id)
         {
-            return bookrepository.GetBookById(id);
+            var data1= bookrepository.GetBookById(id);
+            return View();
         }
 
         public List<BookModel> SearchBooks(string bookName, string authorName)
