@@ -16,7 +16,8 @@ namespace Lakshman.BookStore.Controllers
             //return View(obj);
             //absolute path - return View("~/TempView/Index.cshtml");
             //relative path
-            return View("../../TempView/Index");
+            //return View("../../TempView/Index");
+            return View();
         }
 
         public ViewResult AboutUs()
