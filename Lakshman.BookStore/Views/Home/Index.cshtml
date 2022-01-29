@@ -17,10 +17,10 @@
     <h1>Welcome to Book Store Application</h1>
     <h1>@DateTime.Now.ToString("dd-mm-yy") </h1>
     <hr />
-    <h1>Sum=@(3+5)</h1>
+    <h1>Sum=@(3 + 5)</h1>
     <hr />
     <h1>Multiline</h1>
-    @{ 
+    @{
         int a = 10;
         int b = 20;
         int c = a + b;
@@ -28,6 +28,46 @@
     <h1>@c</h1>
     <h2>sample@example.com</h2>
     <h2>twitter - @@sample</h2>
+    @{
+        int a1 = 5;
+        if (a1 > 15)
+        {
+            a1++;
+            <h1>Hello from if Block and value = @a1</h1>
+        }
+        else if (a1 == 10)
+        {
+            <h1> Hello from else Block and value ==@a1</h1>
+        }
+        else
+        {
+            <h1>Default block</h1>
+        }
+
+    }
+    @{
+        int a2 = 100;
+        int b2 = 20;
+        int a3 = 2;
+        <h1>Ternary operator =  @(a2 == 10 ? b2 = 5 : b2 = 0)</h1>
+        }
+
+    @switch (a3)
+    {
+        case 1:<h1>Value is 1</h1>
+            break;
+        case 2: <h1>Value is 2</h1>
+            break;
+        case 3: <h1>Value is 3</h1>
+            break;
+        case 4: <h1>Value is 4</h1>
+            break;
+        case 5: <h1>Value is 5</h1>
+            break;
+        default:<h1>Default value is 10</h1>
+            break;
+
+    }
     <p>This is the home page of our book application</p>
 </body>
 </html>
