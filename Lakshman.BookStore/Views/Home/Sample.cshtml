@@ -15,6 +15,7 @@
 </head>
 <body>
     <h1>Welcome to Book Store Application</h1>
+
     <h1>@DateTime.Now.ToString("dd-mm-yy") </h1>
     <hr />
     <h1>Sum=@(3 + 5)</h1>
@@ -50,7 +51,7 @@
         int b2 = 20;
         int a3 = 2;
         <h1>Ternary operator =  @(a2 == 10 ? b2 = 5 : b2 = 0)</h1>
-        }
+    }
 
     @switch (a3)
     {
@@ -72,13 +73,12 @@
     {
         <h1>The value of i is @i</h1>
     }
-    @{ 
+    @{
         var list = new List<int>() { 1, 2, 3, 4, 5 };
     }
     @foreach (var item in list)
     {
         <h1>Value of item is @item</h1>
-    }
-    <p>This is the home page of our book application</p>
+    }    <p>This is the home page of our book application</p>
 </body>
 </html>
